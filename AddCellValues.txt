@@ -1,0 +1,9 @@
+Private Function AddCellValues(ByVal cell1Address As String, ByVal cell2Address As String) as String
+    MsgBox cell1Address
+    MsgBox cell2Address
+    MsgBox Range(cell1Address).Value
+    Dim Add as Double
+    Add = Range(cell1Address).Value + Range(cell2Address).Value
+    MsgBox Add
+    AddCellValues = CStr(Add)
+End Function
